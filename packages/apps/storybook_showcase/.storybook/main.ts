@@ -13,8 +13,8 @@ function getAbsolutePath(value: string): string {
 const config: StorybookConfig = {
   stories: [
     // Load ALL stories in src EXCEPT the Storybook bootstrap folder
-    "../stories/**/*.mdx",
-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../src/stories/**/*.mdx",
+    "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
 
     // Exclude everything inside src/app completely
     // "!../src/app/**/*.mdx",

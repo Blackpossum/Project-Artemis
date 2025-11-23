@@ -35,9 +35,9 @@ export default defineConfig({
   // -------------------------------------------------------------
   resolve: {
     alias: {
-      '@showcase': path.resolve(dirname, './src'),
-      '@ui': path.resolve(dirname, '../../ui/src'),
-    },
+     '@ui': path.resolve(__dirname, '../../ui/src'),
+     '@showcase': path.resolve(__dirname, './src')
+}
   },
 
   // -------------------------------------------------------------

@@ -1,14 +1,6 @@
 {
-  "files": [],
+  "include": [],
   "references": [
     { "path": "./packages/ui" }
-  ],
-  "compilerOptions": {
-    "composite": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "baseUrl": "."
-  }
+  ]
 }

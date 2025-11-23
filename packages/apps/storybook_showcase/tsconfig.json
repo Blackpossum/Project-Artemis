@@ -1,16 +1,7 @@
 {
-  "extends": "../../../tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "jsx": "react-jsx",
-    "moduleResolution": "bundler",  
-    "paths": {
-      "@showcase/*": ["src/*"],
-      "@ui/*": ["../../ui/src/*"]
-    }
-  },
-  "include": [
-    "src",
-    "../stories"   // ← Add this line
+  "include": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
   ]
 }
