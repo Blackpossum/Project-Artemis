@@ -1,0 +1,16 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",  
+    "paths": {
+      "@showcase/*": ["src/*"],
+      "@ui/*": ["../../ui/src/*"]
+    }
+  },
+  "include": [
+    "src",
+    "../stories"   // ← Add this line
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "project-artemis",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9.39.1",
+    "eslint-plugin-storybook": "10.0.8",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.17",
+    "turbo": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.23.0"
+}

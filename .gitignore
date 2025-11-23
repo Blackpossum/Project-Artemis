@@ -1,0 +1,74 @@
+node_modules
+structure.txt
+.env
+.npmrc
+.DS_Store
+.vscode/
+
+# -----------------------------
+# Node / PNPM
+# -----------------------------
+node_modules/
+pnpm-lock.yaml
+.pnpm-store/
+*.log
+*.tmp
+
+# -----------------------------
+# Vite / Storybook output
+# -----------------------------
+dist/
+storybook-static/
+.storybook-out/
+*.tsbuildinfo
+
+# Storybook cache (safe to ignore)
+.storybook-cache/
+.sb-cache/
+sb-cache/
+
+# Vite cache
+.vite/
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+# -----------------------------
+# Build artifacts
+# -----------------------------
+*.d.ts.map
+*.map
+*.cache/
+.cache/
+output/
+build/
+
+# -----------------------------
+# Test related
+# -----------------------------
+coverage/
+coverage-final.json
+.vitest/
+*.spec.coverage.*
+*.test.md
+
+# Playwright + browser testing
+test-results/
+playwright-report/
+playwright/.cache/
+
+# -----------------------------
+# Editor / OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# Environment files
+# -----------------------------
+.env
+.env.local
+.env.*.local

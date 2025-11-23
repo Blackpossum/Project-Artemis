@@ -1,0 +1,43 @@
+{
+  "name": "@project-artemis/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Reusable UI components for Project Artemis",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsup",
+    "lint": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^17 || ^18 || ^19",
+    "react-dom": "^17 || ^18 || ^19",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "7.3.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.23.0",
+  "devDependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "7.3.5",
+    "classnames": "^2.5.1",
+    "react-is": "18.3.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "react-is": "^18.3.1"
+  }
+}
