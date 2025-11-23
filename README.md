@@ -76,13 +76,13 @@ If you only want to **use the UI components** (not contribute), follow these ste
 If the UI library is published to npm:
 
 ```
-pm install @project-artemis/ui
+npm install @project-artemis/ui
 ```
 
 If you install directly from GitHub:
 
 ```
-pm install git+https://github.com/your-org/project-artemis.git#packages/ui
+npm install git+https://github.com/your-org/project-artemis.git#packages/ui
 ```
 
 Or if using pnpm inside the monorepo:
