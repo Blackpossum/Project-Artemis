@@ -1,4 +1,4 @@
-/// <reference types="vitest/config" />
+/ <reference types="vitest/config" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'node:path';
@@ -31,7 +31,7 @@ export default defineConfig({
   ],
 
   // -------------------------------------------------------------
-  //  Absolute Path Aliases (this is what you asked for)
+  //  Absolute Path Aliases
   // -------------------------------------------------------------
   resolve: {
     alias: {
@@ -41,20 +41,20 @@ export default defineConfig({
   },
 
   // -------------------------------------------------------------
-  //  Allow reading files outside this directory (pnpm monorepo)
+  //  Allow reading files outside this directory (pnpm monorepo stuff)
   // -------------------------------------------------------------
   server: {
     fs: {
       allow: [
-        dirname,                                // storybook_showcase
-        path.resolve(dirname, '../../ui'),      // component library
-        path.resolve(dirname, '../../..'),      // monorepo root
+        dirname,                                // ----> storybook_showcase
+        path.resolve(dirname, '../../ui'),      // ---> component library
+        path.resolve(dirname, '../../..'),      // ----> monorepo root
       ],
     },
   },
 
   // -------------------------------------------------------------
-  //  Vitest + Storybook test integration (your original config)
+  //  Vitest + Storybook test integration 
   // -------------------------------------------------------------
   test: {
     projects: [
